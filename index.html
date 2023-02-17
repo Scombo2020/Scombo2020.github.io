@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>The Shooting Start</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -9,19 +10,12 @@
 
 <form>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name">
     <br>
-    <button type="submit">Submit</button>
+    <button type="submit" onclick="myFunction()" >Submit</button>
   </form>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-const API_KEY = '<your-riot-api-key>';
-    const SUMMONER_NAME = '<summoner-name>';
-    
-    fetch(`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${SUMMONER_NAME}?api_key=${API_KEY}`)
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error(error));
     
